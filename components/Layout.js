@@ -1,5 +1,11 @@
 import React from 'react';
-
-const Layout = (props) => (<div><h1>header</h1> {props.children}<h1>footer</h1> </div>)
+import Header from "./Header"
+import { Container } from 'semantic-ui-react';
+const Layout = (props) => (
+    <Container>
+        <Header />
+        {props.children}
+    </Container>
+)
 
 export default Layout;
