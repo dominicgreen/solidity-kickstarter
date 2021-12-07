@@ -10,6 +10,7 @@ class RequestRow extends Component {
         loading: false
     }
 
+
     onApprove = async () => {
         this.setState({ loading: true });
         const campaign = Campaign(this.props.address);
